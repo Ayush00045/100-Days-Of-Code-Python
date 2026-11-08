@@ -16,3 +16,5 @@ Completed
 ""Open In Colab" 
 https://colab.research.google.com/assets/colab-badge.svg
 https://colab.research.google.com/github/Ayush00045/100-Days-Of-Code-Python/blob/main/Day-01/Day01_100DaysOfCode.ipynb
+
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/Ayush00045/100-Days-Of-Code-Python/blob/main/Day-01/Day01_100DaysOfCode.ipynb)
