@@ -9,7 +9,7 @@ My first Python project from the 100 Days of Code Bootcamp by Dr. Angela Yu.
 -Variable
 -String Manipulation
 
-##Status
+## Status
 Completed
 
 ## Open in Colab
