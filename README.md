@@ -6,10 +6,6 @@
 
 **Dr. Angela Yu's Complete Python Pro Bootcamp**
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
-![Challenge](https://img.shields.io/badge/Challenge-100%20Days-2563EB?style=flat-square)
-![Status](https://img.shields.io/badge/Status-In%20Progress-16A34A?style=flat-square)
-
 </div>
 
 ---
