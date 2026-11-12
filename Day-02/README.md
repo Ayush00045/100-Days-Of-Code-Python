@@ -1,5 +1,5 @@
-# Day-02 Tip Calculator
-## 💰 Tip Calculator Website
+# Day-02 Tip Calculator & Bill Splitter
+## 💰 Tip Calculator & Bill Splitter Website
 
 A simple and responsive Tip Calculator built using **Python, Flask, HTML, and CSS**.
 
