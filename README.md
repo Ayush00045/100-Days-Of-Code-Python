@@ -2,18 +2,20 @@
 
 # 100 Days of Code: Python
 
-### Python Development Journey
+### My 100 Days of Python Learning Journey
 
-**Dr. Angela Yu's Complete Python Pro Bootcamp**
+**100 Days of Code: The Complete Python Pro Bootcamp**
+
+*Instructor: Dr. Angela Yu*
 
 </div>
 
 ---
 
-### Overview
+## About This Repository
 
-A structured 100-day journey focused on learning Python through practical coding, problem-solving, and project development.
+A structured learning journey focused on building 100 Python projects in 100 days through hands-on coding, practical exercises, and problem-solving.
 
-### Author
+## Author
 
 **Ayush Raj**
