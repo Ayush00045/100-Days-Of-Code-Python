@@ -14,6 +14,9 @@ A simple and responsive Tip Calculator built using **Python, Flask, HTML, and CS
 - HTML
 - CSS
 
+## 🌐 Live Demo
+[Click Here to View Live Demo](YOUR_LIVE_DEMO_URL)
+
 ## 🚀 Run Locally
 
 ```bash
@@ -24,5 +27,4 @@ python app.py
 Open `http://127.0.0.1:5000` in your browser.
 
 ## 👨‍💻 Author
-
 **Ayush Raj**
