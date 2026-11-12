@@ -1,4 +1,5 @@
-# 💰 Tip Calculator Website
+# Day-02 Tip Calculator
+## 💰 Tip Calculator Website
 
 A simple and responsive Tip Calculator built using **Python, Flask, HTML, and CSS**.
 
