@@ -1,0 +1,242 @@
+/* =========================================
+   1. GLOBAL SETTINGS
+   Basic settings for the entire website
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. BODY STYLING
+   Background, font and page spacing
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #25245c, #3730a3);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   3. WELCOME SECTION
+   Main heading and subtitle
+========================================= */
+
+.welcome-section {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    padding: 35px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.welcome-section h1 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.welcome-section p {
+    font-size: 17px;
+    font-weight: 600;
+    color: #c7d2fe;
+}
+
+
+/* =========================================
+   4. MAIN CONTAINER
+   Places both cards side by side
+========================================= */
+
+.calculator-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+/* =========================================
+   5. CARD STYLING
+   Bill Details and Results card design
+========================================= */
+
+.form-card,
+.result-card {
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(12px);
+}
+
+.form-card h2,
+.result-card h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 28px;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   6. FORM LABELS
+   Labels above the input fields
+========================================= */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   7. INPUT FIELDS
+   Bill amount, tip and people input boxes
+========================================= */
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #172554;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.20);
+}
+
+
+/* =========================================
+   8. CALCULATE BUTTON
+   Button appearance and hover effect
+========================================= */
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    background: linear-gradient(90deg, #6366f1, #9333ea);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+
+/* =========================================
+   9. RESULT BOXES
+   Displays total bill and amount per person
+========================================= */
+
+.result-item {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    text-align: center;
+}
+
+.result-item p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #e0e7ff;
+}
+
+.result-item h3 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #facc15;
+    overflow-wrap: anywhere;
+}
+
+.result-card > p {
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #c7d2fe;
+}
+
+
+/* =========================================
+   10. RESPONSIVE DESIGN
+   Adjusts the layout for mobile screens
+========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 22px 14px;
+    }
+
+    .welcome-section {
+        padding: 28px 15px;
+    }
+
+    .welcome-section h1 {
+        font-size: 28px;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+    }
+
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .form-card,
+    .result-card {
+        padding: 24px;
+    }
+
+    .form-card h2,
+    .result-card h2 {
+        font-size: 22px;
+    }
+
+    .result-item h3 {
+        font-size: 28px;
+    }
+}
