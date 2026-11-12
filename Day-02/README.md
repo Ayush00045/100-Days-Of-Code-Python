@@ -16,7 +16,7 @@ A simple and responsive Tip Calculator built using **Python, Flask, HTML, and CS
 - CSS
 
 ## 🌐 Live Demo
-[Click Here to View Live Demo](YOUR_LIVE_DEMO_URL)
+[Click Here to View Live Demo](https://tip-calculator-website.onrender.com/)
 
 ## 🚀 Run Locally
 
