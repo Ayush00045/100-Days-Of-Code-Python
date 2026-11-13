@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Pizza Delivery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🍕 Python Pizza Delivery</h1>
+
+    <p>Welcome to our Pizza Ordering Website!</p>
+
+    <div class="pizza-gallery">
+
+    <img
+        src="{{ url_for('static', filename='images/pizza1.jpg') }}"
+        alt="Fresh Pizza"
+        class="pizza-image"
+    >
+
+    <img
+        src="{{ url_for('static', filename='images/pizza2.jpg') }}"
+        alt="Delicious Pizza"
+        class="pizza-image"
+    >
+
+</div>
+
+    <h2>Customize Your Pizza</h2>
+
+    <div class="order-layout">
+
+    <form action="/" method="POST">
+
+        <label for="size">Choose Pizza Size:</label>
+        <select name="size" id="size">
+            <option value="S">Small - $15</option>
+            <option value="M">Medium - $20</option>
+            <option value="L">Large - $25</option>
+        </select>
+
+        <h3>Extra Toppings</h3>
+
+        <label for="pepperoni">Pepperoni:</label>
+        <select name="pepperoni" id="pepperoni">
+            <option value="N">No</option>
+            <option value="Y">Yes</option>
+        </select>
+
+        <br><br>
+
+        <label for="extra_cheese">Extra Cheese:</label>
+        <select name="extra_cheese" id="extra_cheese">
+            <option value="N">No</option>
+            <option value="Y">Yes</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+    {% if total is not none %}
+
+
+
+<div class="receipt">
+
+    <h2>🍕 Order Confirmed!</h2>
+
+    <p>Thank you for choosing Python Pizza.</p>
+
+    <div class="receipt-item">
+        <span>{{ size_name }}</span>
+        <span>${{ total - pepperoni_price - cheese_price }}</span>
+    </div>
+
+    <div class="receipt-item">
+        <span>Pepperoni</span>
+        <span>${{ pepperoni_price }}</span>
+    </div>
+
+    <div class="receipt-item">
+        <span>Extra Cheese</span>
+        <span>${{ cheese_price }}</span>
+    </div>
+
+    <hr>
+
+    <div class="receipt-total">
+        <span>Total Amount</span>
+        <span>${{ total }}</span>
+    </div>
+
+    <p class="thank-you">Enjoy Your Pizza! ❤️</p>
+
+</div>
+
+{% endif %}
+
+{% if error %}
+    <p>{{ error }}</p>
+{% endif %}
+
+</div>
+
+<footer class="site-footer">
+
+    <div class="developer-profile">
+
+        <img
+            src="https://avatars.githubusercontent.com/u/169538577?v=4"
+            alt="Ayush Raj"
+            class="developer-photo"
+        >
+
+        <div class="developer-info">
+            <p>Created & Designed By</p>
+            <h3>Ayush Raj</h3>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Python Pizza Delivery. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
